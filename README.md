@@ -18,4 +18,19 @@ grep -i "privet" text.txt
 Команда выведет "Privet" и "privet"
 
 ## Задача на выполнение.
-Найти в английской версии стихотворения "Я помню чудное мгновение" Пушкина A.C. все слова "And" и их количество с помощью команд в терминале.
+Найти в английской версии стихотворения "Я помню чудное мгновение" Пушкина A.C. (смотреть прикрепленный к репозиторию файл)  все слова "And", номер строк и их количество с помощью команд в терминале.
+
+## Решение:
+использую -o (Выводит только совпадение) и -n (номер строк)
+```
+grep -o -n "And" Pushkin.txt
+```
+```
+grep -o -n "And" Pushkin.txt | wc -l
+```
+![image](https://github.com/user-attachments/assets/60be3493-801c-4261-99ea-ea5c5c75fd09)
+
+
+# Ссылки на материалы:
+1. https://selectel.ru/blog/tutorials/grep-command-in-linux/
+2. https://www.geeksforgeeks.org/grep-command-in-unixlinux/
